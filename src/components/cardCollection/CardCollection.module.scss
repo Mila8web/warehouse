@@ -1,0 +1,16 @@
+.CardCollection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 110px;
+}
+
+.title {
+    font-size: 21px;
+    margin: 43px 0 0 0;
+}
+
+.span {
+    font-size: 14px;
+}

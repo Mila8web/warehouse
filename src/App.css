@@ -1,0 +1,59 @@
+.grid-app {
+  display: grid;
+  grid-auto-columns: 25% 1fr 25%;
+  grid-auto-rows: 660px 376px 330px 376px 376px 350px;
+}
+
+.header {
+  background-color: #e9eae2;
+  grid-area: 1/1/2/3;
+}
+
+.navigation {
+  background-color: rgb(1, 19, 1);
+  grid-area: 1/3/2/4;
+}
+
+.potsCollection {
+  grid-area: 2/1/3/2;
+  background-image: url(./assets/images/pots/pots-bgn-Shape3.png);
+  background-size: contain;
+}
+
+.pot {
+  background-color:white;
+  grid-area: 2/2/3/4;
+}
+
+.rooms {
+  background-color:gray;
+  grid-area: 3/span 3;
+}
+
+.shaker {
+  background-color: white;
+  grid-area: 4/1/5/3;
+}
+
+.shakersCollection {
+  grid-area: 4/3/5/4;
+  background-image: url(./assets/images/shakers/shakers-bgn-Shape3.png);
+  background-size: contain;
+}
+
+.authenticsCollection {
+  /* background-color:lightyellow; */
+  grid-area: 5/1/6/2;
+  background-image: url(./assets/images/authentics/authentics--bgn-Shape3.png);
+  background-size: contain;
+}
+.authentic {
+  background-color:white;
+  grid-area: 5/2/6/4;
+}
+
+.footer {
+  background-color:darkseagreen;
+  grid-area: 6/span 3;
+} 
+
