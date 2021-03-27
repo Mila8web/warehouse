@@ -1,3 +1,5 @@
+@import "./../../scss/fonts";
+
 .CardCollection {
     display: flex;
     flex-direction: column;
@@ -9,11 +11,13 @@
 .title {
     font-size: 21px;
     margin: 43px 0 0 0;
-    font-family: "RobotoLihgt";
+    font-weight: 300;
+    opacity: 0.7;
 }
 
 .span {
     font-size: 14px;
-    font-family: "RobotoMedium";
+    font-weight: 500;
     text-transform: uppercase;
+    opacity: 0.4;
 }
