@@ -19,7 +19,7 @@ function App() {
         />
       </section>
       <section className="pot">pot</section>
-      <section className="rooms">rooms</section>
+      <section className="rooms"></section>
       <section className="shaker">shaker</section>
       <section className="shakersCollection">
       <CardCollection 
