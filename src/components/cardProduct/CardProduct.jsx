@@ -11,7 +11,7 @@ const CardProduct = (props) => {
     return (
         <div className={s.CardProduct}>
 
-            <div>
+            <div className={s.boxLeft}>
                 <h3 className={s.name}>
                 Kettle Thermo Pot
                 </h3>
@@ -29,12 +29,15 @@ const CardProduct = (props) => {
                 </div>
             </div>
 
+            {/* <div className={s.boxCenter}> */}
             <img className={s.img}
                 src={product}
                 alt={props.alt}
             />
+            {/* </div> */}
+            
 
-            <div>
+            <div className={s.boxRight}>
                 <div className={s.inner}>
                 <img className={s.foto}
                         src={foto} 

@@ -1,7 +1,10 @@
 .CardProduct {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+}
+
+.boxLeft {
+    max-width: 250px;
 }
 
 .name {
@@ -27,9 +30,19 @@
     padding-left: 6px;
 }
 
+.boxCenter {
+    max-width: 426px;
+}
+
+.boxRight {
+    max-width: 230px;
+    margin-left: 160px;
+}
+
 .inner {
-    display: flex;
-    justify-content: center;
+    padding-left: 30px;
+    padding-top: 70px;
+    margin-bottom: 20px;
 }
 
 .caption {

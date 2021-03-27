@@ -6,7 +6,10 @@ import CardCollection from './components/cardCollection/CardCollection';
 import pots from "./assets/images/pots/pots-TeaPots.png"
 import shakers from "./assets/images/shakers/shakers-img-Layer39.png"
 import authentics from "./assets/images/authentics/authentics-IMG-Layer40.png"
-import CardProduct from './components/cardProduct/CardProduct';
+import CardProduct from './components/cardProduct/CardProduct'
+import icon1 from './assets/images/footer/footer-icon1-TeaPots.png'
+import icon2 from './assets/images/footer/footer-icon2-Layer39.png'
+import icon3 from './assets/images/footer/footer-icon3-Layer40.png'
 
 function App() {
   return (
@@ -46,7 +49,18 @@ function App() {
       <section className="authentic" style={{padding: "0 70px 0 425px"}}>
           <CardProduct/>
         </section>
-      <footer className="footer">footer</footer>
+      <footer className="footer">
+        <div className="footer__rightBox">
+          <div>
+          <img className="icon" src={icon1} alt={'#'}/>
+          <img className="icon" src={icon2} alt={'#'}/>
+          <img className="icon" src={icon3} alt={'#'}/>
+          </div>
+          
+          <p className="footer__caption">2014 WARE HOUSE, USA based company. Image right belong to their</p>
+        </div>
+        
+      </footer>
     </div>
   );
 }
