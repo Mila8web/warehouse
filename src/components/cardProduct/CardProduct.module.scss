@@ -1,13 +1,12 @@
 .CardProduct {
-    display: flex;
-    justify-content: space-between;
-}
-
-.boxLeft {
-    max-width: 250px;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0 0 0 50px;
 }
 
 .name {
+    padding: 56px 0 0 0;
+    margin: 0;
     font-size: 29px;
     font-weight: 300;
 }
@@ -21,6 +20,7 @@
 .wrapper {
     display: flex;
     align-items: center;
+    margin: 40px 0 0 0;
 }
 
 .span {
@@ -29,29 +29,3 @@
     font-weight: 300;
     padding-left: 6px;
 }
-
-.boxCenter {
-    max-width: 426px;
-}
-
-.boxRight {
-    max-width: 230px;
-    margin-left: 160px;
-}
-
-.inner {
-    padding-left: 30px;
-    padding-top: 70px;
-    margin-bottom: 20px;
-}
-
-.caption {
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.title {
-    font-size: 58px;
-    font-weight: 100;
-}
-

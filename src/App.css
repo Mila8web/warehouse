@@ -1,34 +1,44 @@
 .grid-app {
   display: grid;
-  grid-auto-columns: 25% 20% 30% 25%;
+  grid-auto-columns: 25% 1fr 25%;
   grid-auto-rows: 660px 376px 330px 376px 376px 350px;
 }
 
 .header {
   background-color: #e9eae2;
-  grid-area: 1/1/2/4;
+  grid-area: 1/1/2/3;
 }
 
 .navigation {
-  background-color: rgb(4, 3, 61);
-  grid-area: 1/4/2/5;
+  background-image: url(./assets/images/navigation/navBgn.png);
+  background-size: 100% 100%;
+  grid-area: 1/3/2/4;
 }
 
 .potsCollection {
   grid-area: 2/1/3/2;
-  background-image: url(./assets/images/pots/pots-bgn-Shape3.png);
+  background-color:#f5f5f5;
+  background-image: url(./assets/images/pots/potsBgn.png);
   background-size: 100% 100%;
   z-index: 1;
 }
 
 .pot {
   background-color:#f5f5f5;
-  grid-area: 2/1/3/5;
-  display: flex;
+  grid-area: 2/2/3/3;
+  background-image: url(./assets/images/pots/pot-img-Layer27.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+}
+.potAdvice {
+  background-color:#f5f5f5;
+  grid-area: 2/3/3/4;
+  
 }
 
 .rooms {
-  grid-area: 3/span 4;
+  grid-area: 3/span 3;
   background-image: url(./assets/images/rooms/rooms-bgn-Rectangle3.png);
   background-size: 100% 100%;
   display: flex;
@@ -40,7 +50,6 @@
   width: 162px;
   height: 162px;
   background-color: #f5f5f5;
-  /* background-color: yellow; */
   border-radius: 50% 50%;
   -webkit-border-radius: 50% 50%;
   -moz-border-radius: 50% 50%;
@@ -70,10 +79,8 @@
 .circleImg {
   width: 34px;
   height: 30px;
-  border: none;
-  background-image: url(./assets/images/rooms/rooms-Shape9.png);
   background-size: 100% 100%;
-  
+  border: none;
 }
 
 .circleTitle {
@@ -84,18 +91,30 @@
 
 .shaker {
   background-color: #f5f5f5;
-  grid-area: 4/1/5/5;
+  grid-area: 4/1/5/2;
+  
+}
+
+.shakerAdvice {
+  background-color: #f5f5f5;
+  background-image: url(./assets/images/shakers/shaker-img-Layer28.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  grid-area: 4/2/5/3;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 90px 0 0;
 }
 
 .shakersCollection {
-  grid-area: 4/4/5/5;
+  grid-area: 4/3/5/4;
+  background-color: #f5f5f5;
   background-image: url(./assets/images/shakers/shakers-bgn-Shape3.png);
   background-size: 100% 100%;
   z-index: 1;
 }
 
 .authenticsCollection {
-  /* background-color:lightyellow; */
   grid-area: 5/1/6/2;
   background-image: url(./assets/images/authentics/authentics--bgn-Shape3.png);
   background-size: 100% 100%;
@@ -103,27 +122,34 @@
 }
 .authentic {
   background-color:#ffffff;
-  grid-area: 5/1/6/5;
+  grid-area: 5/2/6/3;
+  background-image: url(./assets/images/authentics/authentic-img-Layer23.png);
+  background-position: 5% 50%;
+}
+
+.authenticAdvice {
+  background-color:#ffffff;
+  grid-area: 5/3/6/4;
 }
 
 .footer {
-  grid-area: 6/span 4;
+  grid-area: 6/span 3;
   background-image: url(./assets/images/footer/footer-bgn-Layer24.png);
   background-size: 100% 100%;
   display: grid;
-  grid-auto-columns: 25% 20% 30% 25%;
+  grid-auto-columns: 1fr 1fr;
 } 
 
 .footer__rightBox {
-  grid-area: 1/span 2;
+  grid-area: 1/span 1;
   padding-left: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .icon {
-  margin: 80px 45px 30px 0;
+  margin: 160px 45px 20px 0;
 }
 
 .footer__caption {
