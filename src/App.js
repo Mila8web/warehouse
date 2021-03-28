@@ -77,8 +77,8 @@ function App() {
   
   return (
     <div className="grid-app">
-      <header className="header">header</header>
-      <nav className="navigation">navigation</nav>
+      <header className="header"></header>
+      <nav className="navigation"></nav>
     <div className="potsCollection">
       <CardCollection 
         img={data0.img}
@@ -108,7 +108,7 @@ function App() {
             src={shape}
             alt={'#'}
           />
-          <h3 className="circleTitle">ROOMS</h3>
+          <h3 className="circleTitle"></h3>
       </div>
     </div>
       
@@ -161,14 +161,22 @@ function App() {
     </div>
           
     <footer className="footer">
-        <div className="footer__rightBox">
+        <div className="footer__leftPart">
           <div>
           <img className="icon" src={icon1} alt={'#'}/>
           <img className="icon" src={icon2} alt={'#'}/>
           <img className="icon" src={icon3} alt={'#'}/>
           </div>
-          <p className="footer__caption">2014 WARE HOUSE, USA based company. Image right belong to their respective owners.</p>
+          <p className="leftCaption">2014 WARE HOUSE, USA based company. Image right belong to their respective owners.</p>
         </div>
+        <div className="footer__rightPart">
+          <div className="topLeft"></div>
+          <div className="topRight"></div>
+          <div className="bottomLeft"></div>
+          <div className="bottomRight"></div>
+          <div className="boxFoto"></div>
+          <div className="rightCaption">warehouse</div>
+        </div >
     </footer>
 
     </div>
