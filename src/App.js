@@ -4,7 +4,9 @@ import './App.css';
 import CardCollection from './components/cardCollection/CardCollection';
 import CardProduct from './components/cardProduct/CardProduct';
 import CardAdvice from './components/cardAdvice/CardAdvice';
+import Navigation from './components/navigation/Navigation';
 // 
+import headerFoto from "./assets/images/header/header-foto-layer6.png"
 import pots from "./assets/images/pots/teaPots.png"
 import shape from './assets/images/rooms/rooms-Shape9.png'
 import shakers from "./assets/images/shakers/shaker.png"
@@ -17,6 +19,7 @@ import fotoKARINA from "./assets/images/authentics/fotoKARINA.png"
 import icon1 from './assets/images/footer/footer-icon1-TeaPots.png'
 import icon2 from './assets/images/footer/footer-icon2-Layer39.png'
 import icon3 from './assets/images/footer/footer-icon3-Layer40.png'
+
 
 
 function App() {
@@ -77,8 +80,25 @@ function App() {
   
   return (
     <div className="grid-app">
-      <header className="header"></header>
-      <nav className="navigation"></nav>
+      <header className="header">
+        <div className="header__leftPart">
+          <div className="boxTopLeft"></div>
+          <div className="boxTopRight"></div>
+          <div className="boxBottomLeft"></div>
+          <div className="boxBottomRight"></div>
+          <h3 className="price">Cork Salt & Pepper 45.50  $</h3>
+        </div>
+        <div className="header__rightPart">
+          <img className="headerFoto"
+                src={headerFoto} 
+                alt="#"
+          />
+          <p className="headerCaption">BY MATERIA & NENDO</p>
+          <h2 className="headerTitle">Good</h2>
+          <h2 className="headerTitle">Things come in Paris</h2>
+        </div>
+      </header>
+      <Navigation/>
     <div className="potsCollection">
       <CardCollection 
         img={data0.img}
@@ -108,7 +128,7 @@ function App() {
             src={shape}
             alt={'#'}
           />
-          <h3 className="circleTitle"></h3>
+          <h3 className="circleTitle">ROOMS</h3>
       </div>
     </div>
       
