@@ -98,7 +98,9 @@ function App() {
           <h2 className="headerTitle">Things come in Paris</h2>
         </div>
       </header>
-      <Navigation/>
+
+        <Navigation />
+      
     <div className="potsCollection">
       <CardCollection 
         img={data0.img}

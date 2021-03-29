@@ -1,0 +1,23 @@
+@import "./../../../scss/fonts";
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+}
+
+.img {
+    width: 45px;
+    height: 45px;
+    // background-size: cover;
+}
+
+.title {
+    font-size: 18px;
+    line-height: auto;
+    font-family: "RobotoBlack";
+    font-weight: 900;
+    color: #3ab3a6;
+    margin: 0;
+}
