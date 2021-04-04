@@ -46,13 +46,13 @@ function App() {
     price: '274.50 $',
     span: 'ADD TO FAVS'
   }
-  
+
   const fact1 = {
     name: 'Salt & Pepper  Grinder',
     price: '75.50 $',
     span: 'FAVED'
   }
-  
+
   const fact2 = {
     name: 'Generic Oak Bowl',
     price: '87.49 $',
@@ -65,7 +65,7 @@ function App() {
     caption: 'BY NOOR JAHAAN',
     title: 'Tea  O’Clock'
   }
-  
+
   const record1 = {
     foto: fotoAMISHA,
     caption: 'BY AMISHA PATEL',
@@ -77,7 +77,7 @@ function App() {
     caption: 'BY KARINA KAPOOR',
     title: 'Back to Basics'
   }
-  
+
   return (
     <div className="grid-app">
       <header className="header">
@@ -90,8 +90,8 @@ function App() {
         </div>
         <div className="header__rightPart">
           <img className="headerFoto"
-                src={headerFoto} 
-                alt="#"
+            src={headerFoto}
+            alt="#"
           />
           <p className="headerCaption">BY MATERIA & NENDO</p>
           <h2 className="headerTitle">Good</h2>
@@ -99,95 +99,95 @@ function App() {
         </div>
       </header>
 
-        <Navigation />
-      
-    <div className="potsCollection">
-      <CardCollection 
-        img={data0.img}
-        alt={data0.alt}
-        title={data0.title}
-      />
-    </div>
-    <div className="pot">
-      <CardProduct
-      name={fact0.name}
-      price={fact0.price}
-      span={fact0.span}
-      />
-    </div>
+      <Navigation />
 
-    <div className="potAdvice">
-      <CardAdvice
-        foto={record0.foto}
-        caption={record0.caption}
-        title={record0.title}
-      />
-    </div>
+      <div className="potsCollection">
+        <CardCollection
+          img={data0.img}
+          alt={data0.alt}
+          title={data0.title}
+        />
+      </div>
+      <div className="pot">
+        <CardProduct
+          name={fact0.name}
+          price={fact0.price}
+          span={fact0.span}
+        />
+      </div>
 
-    <div className="rooms">
-      <div className="circle">
+      <div className="potAdvice">
+        <CardAdvice
+          foto={record0.foto}
+          caption={record0.caption}
+          title={record0.title}
+        />
+      </div>
+
+      <div className="rooms">
+        <div className="circle">
           <img className="circleImg"
             src={shape}
             alt={'#'}
           />
           <h3 className="circleTitle">ROOMS</h3>
+        </div>
       </div>
-    </div>
-      
-    <div className="shaker">
-      <CardProduct
-      name={fact1.name}
-      price={fact1.price}
-      span={fact1.span}
-      />
-    </div>
 
-    <div className="shakerAdvice">
-      <CardAdvice 
-        foto={record1.foto}
-        caption={record1.caption}
-        title={record1.title}
-      />
-    </div>
-          
-    <div className="shakersCollection">
-      <CardCollection 
-        img={data1.img}
-        alt={data1.alt}
-        title={data1.title}
-      />
-    </div>
-      
-    <div className="authenticsCollection">
-      <CardCollection 
-        img={data2.img}
-        alt={data2.alt}
-        title={data2.title}
-      />
-    </div>
+      <div className="shaker">
+        <CardProduct
+          name={fact1.name}
+          price={fact1.price}
+          span={fact1.span}
+        />
+      </div>
 
-    <div className="authentic">
-    <CardProduct
-      name={fact2.name}
-      price={fact2.price}
-      span={fact2.span}
-      />
-    </div>
+      <div className="shakerAdvice">
+        <CardAdvice
+          foto={record1.foto}
+          caption={record1.caption}
+          title={record1.title}
+        />
+      </div>
 
-    <div className="authenticAdvice">
-     <CardAdvice
-        foto={record2.foto}
-        caption={record2.caption}
-        title={record2.title}
-      />
-    </div>
-          
-    <footer className="footer">
+      <div className="shakersCollection">
+        <CardCollection
+          img={data1.img}
+          alt={data1.alt}
+          title={data1.title}
+        />
+      </div>
+
+      <div className="authenticsCollection">
+        <CardCollection
+          img={data2.img}
+          alt={data2.alt}
+          title={data2.title}
+        />
+      </div>
+
+      <div className="authentic">
+        <CardProduct
+          name={fact2.name}
+          price={fact2.price}
+          span={fact2.span}
+        />
+      </div>
+
+      <div className="authenticAdvice">
+        <CardAdvice
+          foto={record2.foto}
+          caption={record2.caption}
+          title={record2.title}
+        />
+      </div>
+
+      <footer className="footer">
         <div className="footer__leftPart">
           <div>
-          <img className="icon" src={icon1} alt={'#'}/>
-          <img className="icon" src={icon2} alt={'#'}/>
-          <img className="icon" src={icon3} alt={'#'}/>
+            <img className="icon" src={icon1} alt={'#'} />
+            <img className="icon" src={icon2} alt={'#'} />
+            <img className="icon" src={icon3} alt={'#'} />
           </div>
           <p className="leftCaption">2014 WARE HOUSE, USA based company. Image right belong to their respective owners.</p>
         </div>
@@ -199,7 +199,7 @@ function App() {
           <div className="boxFoto"></div>
           <div className="rightCaption">warehouse</div>
         </div >
-    </footer>
+      </footer>
 
     </div>
   );

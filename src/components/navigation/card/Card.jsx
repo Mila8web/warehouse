@@ -2,18 +2,18 @@ import s from "./Card.module.scss"
 
 const Card = (props) => {
     return (
-        <div className={s.Card}>
-            <div className={s.img}>
-            <img 
+        <figure className={s.Card}>
+
+            <img className={s.img}
                 src={props.img}
                 alt={props.alt}
             />
-            </div>
-            
-            <h3 className={s.title}>
+
+            <figcaption className={s.title}>
                 {props.title}
-            </h3>
-        </div>
+            </figcaption>
+
+        </figure>
     )
 }
 
