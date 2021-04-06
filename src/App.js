@@ -19,6 +19,10 @@ import fotoKARINA from "./assets/images/authentics/fotoKARINA.png"
 import icon1 from './assets/images/footer/footer-icon1-TeaPots.png'
 import icon2 from './assets/images/footer/footer-icon2-Layer39.png'
 import icon3 from './assets/images/footer/footer-icon3-Layer40.png'
+// 
+import Navbar from './components/navigation/Navbar';
+// 
+
 
 
 
@@ -99,7 +103,9 @@ function App() {
         </div>
       </header>
 
-      <Navigation />
+      
+            {/* <Navigation style={{height: "100%"}}/> */}
+      <Navbar/>
 
       <div className="potsCollection">
         <CardCollection
